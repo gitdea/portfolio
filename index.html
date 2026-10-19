@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>Andrea Cruz Leonardo | Desenvolvedora Python &amp; IA</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@600;800&amp;display=swap">
+<style>
+:root{--bg:#020617;--tw:#0F172A;--ink:#F1F5F9;--muted:#94A3B8;--soft:#CBD5E1;--gold:#FBBF24;--amber:#F59E0B;--rose:#FB7185;--coral:#F43F5E;--ocean:#38BDF8;--teal:#2DD4BF;--glass:rgba(15,23,42,.78);--card:linear-gradient(135deg,rgba(30,41,59,.72),rgba(15,23,42,.82));--line:rgba(255,255,255,.1);--chip:rgba(30,41,59,.8);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#F8FAFC;--tw:#E2E8F0;--ink:#0F172A;--muted:#475569;--soft:#334155;--gold:#B45309;--amber:#D97706;--rose:#E11D48;--coral:#BE123C;--ocean:#0369A1;--teal:#0F766E;--glass:rgba(255,255,255,.85);--card:linear-gradient(135deg,#fff,#F1F5F9);--line:rgba(15,23,42,.12);--chip:#E2E8F0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(86px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--ink);font:15px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background-color:var(--bg);background-image:radial-gradient(circle at 50% -20%,rgba(244,63,94,.25),rgba(245,158,11,.15),rgba(2,132,199,.06),transparent 70%),radial-gradient(circle at 100% 100%,rgba(2,132,199,.12),transparent 45%);background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--tw);z-index:40}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,p{margin:0}
+.f{font-family:Outfit,Inter,sans-serif}
+.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.hd>div{max-width:1100px;margin:0 auto;padding:0 20px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.br{display:flex;align-items:center;gap:12px}
+.lg{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;font:800 1rem Outfit,sans-serif;background:linear-gradient(45deg,#D97706,#FB7185,#0284C7);box-shadow:0 6px 16px rgba(217,119,6,.25)}
+.br b{display:block;font:800 1.05rem/1.1 Outfit,sans-serif}
+.br span{font-size:.72rem;color:var(--muted)}
+.nv{display:flex;gap:28px;font-size:.88rem;font-weight:500;color:var(--soft)}
+.nv a:hover{color:var(--gold)}
+.ac{display:flex;gap:10px;align-items:center}
+.bt{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.88rem;padding:10px 18px;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--ink);cursor:pointer;font-family:inherit}
+.bt.p{border:0;color:#fff;background:linear-gradient(90deg,#D97706,#FB7185);box-shadow:0 6px 16px rgba(251,113,133,.25)}
+.bt.p.big{background:linear-gradient(90deg,#D97706,#FB7185,#0284C7);padding:14px 26px;border-radius:14px}
+.bt:hover{transform:translateY(-1px)}
+main{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:36px 20px 80px;display:grid;gap:96px}
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:34px;align-items:center}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pl{padding:4px 12px;border-radius:999px;font-size:.75rem;font-weight:600;border:1px solid rgba(245,158,11,.25);background:rgba(245,158,11,.1);color:var(--gold)}
+.pl.g{border-color:var(--line);background:var(--chip);color:var(--soft);font-weight:500}
+.pl i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:6px;animation:pu 1.8s infinite}
+@keyframes pu{50%{opacity:.3}}
+h1{font:800 clamp(2.2rem,6vw,3.7rem)/1.12 Outfit,sans-serif;margin:18px 0}
+.gt{background:linear-gradient(135deg,#FBBF24,#FB7185 50%,#38BDF8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lead{color:var(--soft);font-size:1.05rem;max-width:620px}
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:470px;margin:22px 0}
+.qs div{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:12px}
+.qs b{display:block;font:800 1.05rem Outfit,sans-serif}
+.qs span{font-size:.72rem;color:var(--muted)}
+.card{background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:22px;padding:24px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(245,158,11,.4);box-shadow:0 12px 30px -10px rgba(245,158,11,.18)}
+.id h4{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);padding-bottom:14px;border-bottom:1px solid var(--line)}
+.id blockquote{margin:18px 0;padding-left:14px;border-left:2px solid var(--amber);font-style:italic;color:var(--soft)}
+.ic{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.ic div{background:var(--chip);border:1px solid var(--line);border-radius:14px;padding:10px 4px;text-align:center;font-size:.7rem;color:var(--soft)}
+.ic em{display:block;font-size:1.5rem;font-style:normal;animation:wv 6s ease-in-out infinite}
+@keyframes wv{50%{transform:translateY(-6px) rotate(2deg)}}
+.id small{display:flex;justify-content:space-between;gap:8px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.75rem;color:var(--muted)}
+.sh{text-align:center;max-width:640px;margin:0 auto 34px}
+.sh.l{text-align:left;margin:0 0 30px;max-width:none}
+.sh span{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--gold)}
+.sh h2{font:800 clamp(1.8rem,4vw,2.3rem)/1.2 Outfit,sans-serif;margin:8px 0}
+.sh p{color:var(--muted);font-size:.9rem}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.ib{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:1.2rem;background:rgba(245,158,11,.12);margin-bottom:12px}
+.card h3{font:600 1.1rem Outfit,sans-serif;margin-bottom:6px}
+.card p{font-size:.88rem;color:var(--soft)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tab{border:0;cursor:pointer;font:600 .8rem Inter,sans-serif;padding:8px 16px;border-radius:999px;background:var(--chip);color:var(--soft)}
+.tab.on{background:var(--amber);color:#020617}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.sk .card{padding:18px}
+.sk .top{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.sk .ib{margin:0;flex:none}
+.sk h3{font-size:1rem;margin:0}
+.sk small{font-size:.72rem;color:var(--muted)}
+.sk p{font-size:.8rem;color:var(--muted)}
+.pj{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.pj .card{display:flex;flex-direction:column;justify-content:space-between;gap:14px;padding:26px}
+.pj small{font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--rose)}
+.pj h3{font-size:1.25rem;margin:6px 0 8px}
+.tg{display:flex;flex-wrap:wrap;gap:6px}
+.tg span{font-size:.7rem;padding:2px 10px;border-radius:8px;background:var(--chip);border:1px solid var(--line);color:var(--soft)}
+.ln{display:flex;flex-wrap:wrap;gap:16px;font-size:.85rem;font-weight:600}
+.ln a,.ln button{color:var(--ocean);background:none;border:0;padding:0;cursor:pointer;font:inherit;font-weight:600}
+.tl{display:grid;gap:16px;max-width:780px;margin:0 auto}
+.tl .card{display:flex;gap:16px;border-left:4px solid var(--amber)}
+.tl .card:nth-child(2){border-left-color:var(--rose)}
+.tl .card:nth-child(3){border-left-color:var(--ocean)}
+.tl em{font-style:normal;font-size:1.8rem}
+.tl small{font-size:.72rem;font-weight:800;color:var(--gold)}
+.ct{text-align:center;padding:48px 24px}
+.ct h2{font:800 1.9rem Outfit,sans-serif;margin-bottom:8px}
+.ct p{color:var(--soft);max-width:520px;margin:0 auto 24px}
+.ct .row{justify-content:center;gap:14px}
+footer{position:relative;z-index:1;text-align:center;padding:24px 20px;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
+.md{position:fixed;inset:0;z-index:60;background:rgba(2,6,23,.8);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.md.on{display:flex}
+.md .card{max-width:640px;width:100%;max-height:100%;overflow:auto;position:relative}
+.md ol{margin:12px 0;padding-left:20px;display:grid;gap:8px;font-size:.88rem;color:var(--soft)}
+.md .nt{font-size:.8rem;color:var(--muted);background:var(--chip);border-radius:12px;padding:12px}
+.x{position:absolute;top:12px;right:14px;background:none;border:0;color:var(--muted);font-size:1.4rem;cursor:pointer}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.nv{display:none}main{gap:72px}}
+@media (max-width:480px){.qs{grid-template-columns:1fr}.hd>div{height:66px}.br span{display:none}.ac .bt.p span{display:none}}
+@media (prefers-reduced-motion:reduce){.ic em,.pl i{animation:none}html{scroll-behavior:auto}.card,.bt{transition:none}}
+</style>
+</head>
+<body>
+<header class="hd"><div>
+<a class="br" href="#inicio"><span class="lg">AC</span><span><b>Andrea Cruz Leonardo</b><span>Desenvolvedora Python &amp; IA</span></span></a>
+<nav class="nv"><a href="#sobre">Sobre mim</a><a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a><a href="#trajetoria">Trajetória</a></nav>
+<div class="ac"><a class="bt p" href="#contato">✉ <span>Contato</span></a><button class="bt" id="tm" type="button" aria-label="Alternar entre tema escuro e claro">🌅 / 🌙</button></div>
+</div></header>
+
+<main>
+<section class="hero" id="inicio">
+<div>
+<div class="row"><span class="pl"><i></i>Disponível para a primeira vaga</span><span class="pl g">📍 Curitiba, PR</span></div>
+<h1>Construindo o <span class="gt">Back-end</span> inteligente com Python &amp; IA.</h1>
+<p class="lead">Desenvolvo APIs com <b>FastAPI</b> e <b>Django</b>, automações e sistemas com agentes de IA e <b>RAG</b>, do banco de dados ao deploy. Transformo problemas reais em código claro e eficiente.</p>
+<div class="qs"><div><b style="color:var(--gold)">Python</b><span>Stack principal</span></div><div><b style="color:var(--rose)">RAG</b><span>Busca em documentos</span></div><div><b style="color:var(--ocean)">Agentes</b><span>IA &amp; automações</span></div></div>
+<div class="row" style="gap:14px"><a class="bt p big" href="#projetos">Ver meus projetos →</a><a class="bt" href="#contato">💬 Bater um papo</a></div>
+</div>
+<div class="card id">
+<h4>🧭 Identidade &amp; essência</h4>
+<blockquote>“Nativa de Curitiba, sou curiosa e prática. Amo ver a tecnologia resolvendo desafios do dia a dia e construindo soluções eficientes no back-end.”</blockquote>
+<p style="font-size:.75rem;color:var(--muted)">O que me conecta e renova:</p>
+<div class="ic"><div><em>🌅</em>Nascer do sol</div><div><em>🌊</em>Imensidão do mar</div><div><em>🐴</em>Liberdade &amp; cavalos</div></div>
+<small><span>🐾 Apaixonada por animais</span><span style="color:var(--gold)">&lt;/&gt; Código claro</span></small>
+</div>
+</section>
+
+<section id="sobre">
+<div class="sh"><span>Sobre mim</span><h2>Tecnologia, natureza e praticidade</h2><p>Aprendizado contínuo, lógica bem estruturada e clareza.</p></div>
+<div class="g3">
+<div class="card"><div class="ib">🧩</div><h3>Formação e prática</h3><p>Cursando Tecnólogo em Desenvolvimento Back-End (conclusão prevista em nov/2026). Na prática, desenvolvo APIs em Python, modelo bancos PostgreSQL e integro IA a processos reais.</p></div>
+<div class="card"><div class="ib">🧠</div><h3>IA e automação</h3><p>Construo sistemas que leem documentos (inclusive escaneados), buscam os trechos relevantes com RAG e respondem com agentes de IA, além de automações com n8n para tarefas repetitivas.</p></div>
+<div class="card"><div class="ib">🌱</div><h3>Valores e trabalho em equipe</h3><p>Clareza, dedicação e transparência. Prefiro explicar o que funciona e o que ainda não, sem jargão, e resolver o problema na prática, junto com o time.</p></div>
+</div>
+</section>
+
+<section id="habilidades">
+<div class="sh l"><span>Arsenal técnico</span><h2>Habilidades &amp; tecnologias</h2></div>
+<div class="tabs" id="tabs"><button class="tab on" data-f="all">Todas</button><button class="tab" data-f="back">Back-end</button><button class="tab" data-f="ia">IA &amp; agentes</button><button class="tab" data-f="dados">Dados &amp; integrações</button></div>
+<div class="sk">
+<div class="card" data-c="back"><div class="top"><div class="ib">🐍</div><div><h3>Python</h3><small>Linguagem base</small></div></div><p>Lógica, rotinas de dados e integração entre sistemas.</p></div>
+<div class="card" data-c="back"><div class="top"><div class="ib">⚡</div><div><h3>FastAPI &amp; Django</h3><small>APIs e sistemas web</small></div></div><p>APIs REST, autenticação JWT e documentação Swagger.</p></div>
+<div class="card" data-c="back dados"><div class="top"><div class="ib">🗄️</div><div><h3>PostgreSQL &amp; SQLAlchemy</h3><small>Banco de dados</small></div></div><p>Modelagem, multitenancy e trilha de auditoria.</p></div>
+<div class="card" data-c="ia"><div class="top"><div class="ib">🔎</div><div><h3>RAG</h3><small>Busca em documentos</small></div></div><p>Encontra os trechos relevantes antes de enviar o texto à IA.</p></div>
+<div class="card" data-c="ia"><div class="top"><div class="ib">🤖</div><div><h3>Agentes de IA &amp; n8n</h3><small>Orquestração</small></div></div><p>Fluxos com LLMs, webhooks e automação de tarefas.</p></div>
+<div class="card" data-c="ia dados"><div class="top"><div class="ib">📄</div><div><h3>OCR</h3><small>Documentos escaneados</small></div></div><p>Leitura de PDFs digitais e escaneados com Tesseract.</p></div>
+<div class="card" data-c="dados"><div class="top"><div class="ib">📊</div><div><h3>Google Sheets &amp; Pandas</h3><small>Dados e integrações</small></div></div><p>Gravação automática em planilhas e análise de CSV.</p></div>
+<div class="card" data-c="back"><div class="top"><div class="ib">🧪</div><div><h3>Docker, Git &amp; pytest</h3><small>Entrega e qualidade</small></div></div><p>Aplicações empacotadas, código versionado e testes automatizados.</p></div>
+</div>
+</section>
+
+<section id="projetos">
+<div class="sh l"><span style="color:var(--rose)">Casos práticos</span><h2>Projetos &amp; aplicações reais</h2><p>Projetos próprios, com código e demonstração.</p></div>
+<div class="pj">
+<div class="card"><div><small>Python + RAG</small><h3>Análise de documentos com RAG</h3><p>Envie um PDF (inclusive escaneado), faça uma pergunta e receba a resposta com base no documento. OCR, busca de trechos relevantes e três agentes de IA.</p></div><div class="tg"><span>FastAPI</span><span>PostgreSQL</span><span>Groq</span></div><div class="ln"><a href="https://nc6glffthdanpfvm739guz.streamlit.app/" target="_blank" rel="noopener">Testar online</a><a href="https://lnkd.in/dpThnPEw" target="_blank" rel="noopener">Código</a><button type="button" id="om">Como funciona</button></div></div>
+<div class="card"><div><small>FastAPI · SaaS</small><h3>Gestão de condomínios</h3><p>API com autenticação JWT, trilha de auditoria, isolamento de dados entre condomínios (multitenant) e ordens de serviço.</p></div><div class="tg"><span>FastAPI</span><span>JWT</span><span>Docker</span></div><div class="ln"><a href="https://github.com/gitdea/Condominio-inovador-backend" target="_blank" rel="noopener">Código</a></div></div>
+<div class="card"><div><small>Django · SaaS</small><h3>Nexus-Stock</h3><p>Gestão de estoque multitenant com isolamento de dados entre empresas e audit log, em produção.</p></div><div class="tg"><span>Django</span><span>PostgreSQL</span></div><div class="ln"><a href="https://lnkd.in/d3HvyH_u" target="_blank" rel="noopener">Sistema</a><a href="https://lnkd.in/d6UNNykU" target="_blank" rel="noopener">Código</a></div></div>
+<div class="card"><div><small>Dados · IA</small><h3>Luna AI</h3><p>Lê planilhas CSV, gera gráficos de faturamento e entrega um relatório executivo em PDF com Llama 3.3.</p></div><div class="tg"><span>Streamlit</span><span>Pandas</span><span>Groq</span></div><div class="ln"><a href="https://lnkd.in/dG-3KG-9" target="_blank" rel="noopener">Aplicação</a><a href="https://lnkd.in/dzUJZEWu" target="_blank" rel="noopener">Código</a></div></div>
+</div>
+</section>
+
+<section id="trajetoria">
+<div class="sh"><span>Caminho percorrido</span><h2>Trajetória &amp; formação</h2></div>
+<div class="tl">
+<div class="card"><em>🚀</em><div><small>Foco atual · Curitiba, PR</small><h3>Back-end, RAG &amp; agentes de IA</h3><p>Desenvolvedora freelancer desde 2026: APIs em Python, automações e sistemas com IA.</p></div></div>
+<div class="card"><em>🎓</em><div><small>Anhanguera</small><h3>Tecnólogo em Desenvolvimento Back-End</h3><p>Conclusão prevista para novembro de 2026.</p></div></div>
+<div class="card"><em>🛠️</em><div><small>Antes da tecnologia</small><h3>Produção industrial e serviços gerais</h3><p>Anos de montagem, testes e inspeção de qualidade de eletrônicos, que me trouxeram disciplina e atenção a detalhes.</p></div></div>
+</div>
+</section>
+
+<section class="card ct" id="contato">
+<h2 class="gt" style="display:inline-block">Vamos construir algo juntas?</h2>
+<p>Busco minha primeira oportunidade como Desenvolvedora Back-End Júnior ou em Automação e IA (remoto, híbrido ou Curitiba/PR).</p>
+<div class="row"><a class="bt p big" href="https://www.linkedin.com/in/andrea-cruz-leonardo/" target="_blank" rel="noopener">LinkedIn</a><a class="bt" style="padding:14px 26px;border-radius:14px" href="https://github.com/gitdea" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+</main>
+<footer><p>Andrea Cruz Leonardo · Desenvolvedora Python &amp; IA · Curitiba, PR</p><p>🌅 Nascer do sol · 🌊 Mar · 🐴 Cavalos</p></footer>
+
+<div class="md" id="md" role="dialog" aria-modal="true" aria-label="Como funciona o projeto de documentos">
+<div class="card"><button class="x" id="cm" type="button" aria-label="Fechar">×</button>
+<small style="color:var(--rose);font-weight:800;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase">Python + RAG</small>
+<h3 style="font-size:1.4rem;margin:6px 0">Como o projeto funciona</h3>
+<ol><li>A pessoa envia um PDF e uma pergunta pela interface (Streamlit).</li><li>A API (FastAPI) valida o arquivo e extrai o texto. Se o PDF for escaneado, entra o OCR.</li><li>Em documentos longos, o texto é dividido em trechos e cada um recebe uma nota (BM25) conforme a pergunta. Só os mais relevantes seguem em frente.</li><li>Três agentes de IA trabalham em sequência: um extrai os dados, outro confere contra o texto e outro escreve a resposta.</li><li>Cada análise é salva em PostgreSQL e registrada em uma planilha do Google Sheets.</li></ol>
+<p class="nt">Limitações: a busca compara palavras, e não significados, e pedidos de resumo geral ficam incompletos em documentos longos. A IA pode errar, então confira os dados importantes no documento original.</p></div>
+</div>
+
+<script>
+(function(){
+var r=document.documentElement,md=document.getElementById("md");
+document.getElementById("tm").addEventListener("click",function(){r.dataset.theme=r.dataset.theme==="light"?"dark":"light"});
+var tabs=document.querySelectorAll(".tab"),its=document.querySelectorAll("[data-c]");
+tabs.forEach(function(t){t.addEventListener("click",function(){
+tabs.forEach(function(x){x.classList.remove("on")});t.classList.add("on");
+its.forEach(function(i){i.style.display=(t.dataset.f==="all"||i.dataset.c.split(" ").indexOf(t.dataset.f)>-1)?"":"none"});
+})});
+function op(){md.classList.add("on");document.getElementById("cm").focus()}
+function cl(){md.classList.remove("on")}
+document.getElementById("om").addEventListener("click",op);
+document.getElementById("cm").addEventListener("click",cl);
+md.addEventListener("click",function(e){if(e.target===md)cl()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")cl()});
+})();
+</script>
+</body>
+</html>
